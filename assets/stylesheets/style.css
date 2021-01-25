@@ -51,7 +51,7 @@ a {
 /* ASIDE */ 
 
 aside {
-    height: 562px;
+    height: 500px;
     left: 0px;
     top: 71px;
 }
@@ -102,15 +102,12 @@ aside {
 }
 
 aside {
-  max-width: 562px;
-  margin: 0 auto;
-  padding: 0 1.25rem;
   font-family: 'Lato', sans-serif;
   box-sizing: border-box;
   scrollbar-color: transparent transparent; 
   scrollbar-width: 0px;
   -ms-overflow-style: none;
-  scroll-behavior: none;
+  padding-top:25px;
 }
 
 
@@ -128,7 +125,10 @@ aside {
 }
 
 aside section{
-    padding-top:50px ;
+    width: calc(100% - 93px);
+    height: 467px;
+    display: block;
+    margin: auto;
 }
 
 aside ol, 
@@ -140,7 +140,6 @@ aside li {
 
 .carousel {
   position: relative;
-  padding-top: 75%;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
 }
@@ -247,10 +246,9 @@ aside li {
 .carousel__next {
   position: absolute;
   top: 0;
-  margin-top: 37.5%;
+  margin-top: 200px;
   width: 4rem;
   height: 4rem;
-  transform: translateY(-50%);
   border-radius: 50%;
   font-size: 0;
   outline: 0;
@@ -332,12 +330,12 @@ footer h2 {
     box-sizing: border-box;
     border-radius: 5px;
     height: 38px;
-    width: 61vh;
+    width: calc(50% - 3px);
     font-size: 24px;
 }
 
 #contato-2 {
-    margin-left: 45.5px;
+    margin-left: 0px;
 }
 
 .questionario .contato-tipo2 {
