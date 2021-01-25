@@ -1,0 +1,9 @@
+.carousel-item {
+    background-color: #5f6fff;
+    height: 550px;
+    overflow: hidden;
+}
+
+.carousel-item img{
+    opacity: .5;
+}
