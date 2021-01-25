@@ -20,16 +20,92 @@
         </ul>
     </header>
     <aside>
-
+        <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+              <li id="carousel__slide1"
+                  tabindex="0"
+                  class="carousel__slide">
+                <div class="carousel__snapper">
+                  <a href="#carousel__slide4"
+                     class="carousel__prev">Go to last slide</a>
+                  <a href="#carousel__slide2"
+                     class="carousel__next">Go to next slide</a>
+                </div>
+              </li>
+              <li id="carousel__slide2"
+                  tabindex="0"
+                  class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide1"
+                   class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide3"
+                   class="carousel__next">Go to next slide</a>
+              </li>
+              <li id="carousel__slide3"
+                  tabindex="0"
+                  class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide2"
+                   class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide4"
+                   class="carousel__next">Go to next slide</a>
+              </li>
+              <li id="carousel__slide4"
+                  tabindex="0"
+                  class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide3"
+                   class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide1"
+                   class="carousel__next">Go to first slide</a>
+              </li>
+            </ol>
+            <div class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide1"
+                     class="carousel__navigation-button">Go to slide 1</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide2"
+                     class="carousel__navigation-button">Go to slide 2</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide3"
+                     class="carousel__navigation-button">Go to slide 3</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide4"
+                     class="carousel__navigation-button">Go to slide 4</a>
+                </li>
+              </ol>
+            </div>
+          </section>
     </aside>
-    <main id="sobre">
-        <h2>Sobre</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet turpis ex, sit amet tempor nisi vehicula nec. In quis orci sapien. Praesent et mi augue. Sed pellentesque pulvinar elit, ac fringilla justo finibus et. Mauris scelerisque elit eu ex facilisis porta. Fusce vitae venenatis nisi. Nam tincidunt suscipit malesuada. Fusce eleifend lacus vitae elit dignissim commodo.</br>
-            Nulla sed tortor rhoncus, sodales velit non, placerat nisl. Mauris non sapien id risus lacinia sodales. Fusce non felis vestibulum, commodo ante ut, placerat enim. Pellentesque vehicula neque et diam faucibus, sit amet iaculis sapien sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut ac velit ultrices, dignissim ex quis, vehicula ipsum. Etiam id felis accumsan, aliquam nunc id, pulvinar quam. Vestibulum sit amet tellus et purus venenatis ornare malesuada vel diam. Proin id tristique turpis.</p>
-
+    <main>
+        <div id="sobre">
+            <h2>Sobre</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet turpis ex, sit amet tempor nisi vehicula nec. In quis orci sapien. Praesent et mi augue. Sed pellentesque pulvinar elit, ac fringilla justo finibus et. Mauris scelerisque elit eu ex facilisis porta. Fusce vitae venenatis nisi. Nam tincidunt suscipit malesuada. Fusce eleifend lacus vitae elit dignissim commodo.</p>
+            </br>
+            <p>Nulla sed tortor rhoncus, sodales velit non, placerat nisl. Mauris non sapien id risus lacinia sodales. Fusce non felis vestibulum, commodo ante ut, placerat enim. Pellentesque vehicula neque et diam faucibus, sit amet iaculis sapien sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut ac velit ultrices, dignissim ex quis, vehicula ipsum. Etiam id felis accumsan, aliquam nunc id, pulvinar quam. Vestibulum sit amet tellus et purus venenatis ornare malesuada vel diam. Proin id tristique turpis.</p>
+        </div>  
     </main>
-    <footer id="contato">
-
+    <footer>
+        <div id="contato">
+            <h2>Contato</h2>
+            <div class='questionario'>
+                <input type="text" class='contato-tipo1' placeholder="Nome"></input>
+                <input type="text" class='contato-tipo1' id='contato-2'placeholder="E-mail"></input>
+            </div>
+            <div class='questionario'>
+                <textarea placeholder="Mensagem" class="contato-tipo2" cols="300" rows="10"></textarea>
+            </div>
+            <!-- <div class='questionario'>
+                <input type='text' placeholder="Mensagem" class="contato-tipo2"></textarea>
+            </div> -->
+            <button id="button-questionario" type="submit" form="form1" value="Submit">Enviar</button>
+            
+        </div>
     </footer>
 </body>
 </html>
