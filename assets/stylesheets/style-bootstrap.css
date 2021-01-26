@@ -1,3 +1,32 @@
+* {
+    font-family: 'Roboto';
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+header {
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav a{
+    color:#4B7EFF;
+}
+
+.navbar-brand a {
+    font-size: 24px;
+}
+
+.nav-link a {
+    font-size: 18px;
+}
+/* ASIDE */
+
+aside {
+    margin-top: 10px;
+}
+
 .carousel-item {
     background-color: #5f6fff;
     height: 550px;
@@ -7,3 +36,52 @@
 .carousel-item img{
     opacity: .5;
 }
+
+/* MAIN */
+
+main {
+    margin-top: 24px;
+    background-color: rgba(95, 111, 255, 0.76);
+    color: #fff;
+}
+
+main h2 {
+    font-size: 24px;
+    padding-bottom: 47px;
+    margin-left: 98px;
+    padding-top: 46px;
+}
+
+main p {
+    font-size: 18px;
+    margin: 0 126px;
+}
+
+main p:last-child {
+    padding-bottom: 113px;
+}
+
+/* FOOTER */
+
+#contato {
+    margin: 70px 119px 98px 80px;
+}
+
+#contato h2 {
+    font-size: 24px;
+    color: rgba(75, 126, 255, 1);
+}
+#contato .form-row{
+    margin-top: 60px;
+}
+
+
+#contato button {
+    display: block;
+    margin-left: auto;
+}
+
+.form-control::placeholder {
+    color: rgba(75, 126, 255, 0.74)!important;
+}
+

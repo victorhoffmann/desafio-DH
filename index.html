@@ -12,24 +12,24 @@
 </head>
 <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Meu primeiro site</a>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand font-weight-bold" href="#">Meu primeiro site</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Sobre <span class="sr-only">(current)</span></a>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
+              <a class="nav-link" href="#contato">Contato</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Cadastre-se</a>
+              <a class="btn btn-primary" href="#" role="button">Cadastre-se</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Login</a>
+              <a class="nav-link" href="#">Login</a>
             </li>
           </ul>
         </div>
@@ -40,7 +40,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="./assets/img/img-paisagem1.jpg" alt="First slide">
-          </div>
+          </div>  
           <div class="carousel-item">
             <img class="d-block w-100" src="./assets/img/img-paisagem2.jpg" alt="Second slide">
           </div>
@@ -71,18 +71,21 @@
     <footer>
         <div id="contato">
             <h2>Contato</h2>
-            <div class='questionario'>
-                <input type="text" class='contato-tipo1' placeholder="Nome"></input>
-                <input type="text" class='contato-tipo1' id='contato-2'placeholder="E-mail"></input>
-            </div>
-            <div class='questionario'>
-                <textarea placeholder="Mensagem" class="contato-tipo2" cols="300" rows="10"></textarea>
-            </div>
-            <!-- <div class='questionario'>
-                <input type='text' placeholder="Mensagem" class="contato-tipo2"></textarea>
-            </div> -->
-            <button id="button-questionario" type="submit" form="form1" value="Submit">Enviar</button>
-            
+            <form>
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nome">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="E-mail">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="Textarea1"></label>
+                <textarea class="form-control" id="Textarea1" rows="3" placeholder="Mensagem"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>        
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
